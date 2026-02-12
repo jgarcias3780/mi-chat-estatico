@@ -1,8 +1,7 @@
 /* Chatbot button styling */
     #chatbot-button {
       position: fixed;
-      bottom: 60px;
-      right: 60px;
+      right: 50%;
       background-color: rgb(101, 42, 136);;
       color: #fff;
       border: none;
@@ -26,7 +25,7 @@
     #chatbot-window {
       position: fixed;
       bottom: 90px;
-      right: 20px;
+      right: 43%;
       width: 320px;
       height: 450px;
       background-color: #f9f9f9;
