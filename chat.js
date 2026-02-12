@@ -1,12 +1,19 @@
 const chatbotButton = document.getElementById('chatbot-button');
 const chatbotWindow = document.getElementById('chatbot-window');
+const chatbotClose = document.getElementById('chatbot-close');
     const chatbotMessages = document.getElementById('chatbot-messages');
     const chatbotQuestion = document.getElementById('chatbot-question');
     const chatbotSend = document.getElementById('chatbot-send');
 
   
     chatbotButton.addEventListener('click', () => {
-      chatbotWindow.style.display = chatbotWindow.style.display === 'none' || !chatbotWindow.style.display ? 'flex' : 'none';
+      chatbotWindow.style.display = 'flex'
+      chatbotButton.style.display = 'none';
+    });
+
+    chatbotClose.addEventListener('click', () => {
+      chatbotWindow.style.display = 'none';
+      chatbotButton.style.display = 'flex';
     });
     
      // Send question to n8n webhook and display response
