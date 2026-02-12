@@ -1,5 +1,5 @@
 /* Chatbot button styling */
-    #chatbot-button {
+    /*#chatbot-button {
       position: fixed;
       right: 50%;
       background-color: rgb(101, 42, 136);;
@@ -15,7 +15,9 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       font-size: 24px;
-    }
+    }*/
+
+    #chatbot-button { position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: rgb(101, 42, 136); /* púrpura */ color: white; border: none; border-radius: 25px; padding: 10px 20px; font-size: 16px; font-family: sans-serif; cursor: pointer; display: flex; /* alinear ícono y texto */ align-items: center; gap: 8px; /* espacio entre ícono y texto */ }
 
     #chatbot-button:hover {
       background-color: rgb(85, 35, 115);
