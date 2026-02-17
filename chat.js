@@ -5,7 +5,7 @@ const chatbotClose = document.getElementById('chatbot-close');
     const chatbotMessages = document.getElementById('chatbot-messages');
     const chatbotQuestion = document.getElementById('chatbot-question');
     const chatbotSend = document.getElementById('chatbot-send');
-    var urlEndpoint = "";
+    var urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/EnglishChatCount";
 
   
     chatbotButton.addEventListener('click', () => {
