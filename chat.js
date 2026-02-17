@@ -1,20 +1,27 @@
 const chatbotButton = document.getElementById('chatbot-button');
+const chatbotButton2 = document.getElementById('chatbot-button2');
 const chatbotWindow = document.getElementById('chatbot-window');
 const chatbotClose = document.getElementById('chatbot-close');
     const chatbotMessages = document.getElementById('chatbot-messages');
     const chatbotQuestion = document.getElementById('chatbot-question');
     const chatbotSend = document.getElementById('chatbot-send');
+    var urlEndpoint = "";
 
   
     chatbotButton.addEventListener('click', () => {
-      chatbotWindow.style.display = 'flex'
-      chatbotButton.style.display = 'none';
+      chatbotButton.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton2.style = 'background-color:rgb(101, 42, 136) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/EnglishChatCount"
+      chatbotMessages.innerHTML = "";
     });
 
-    chatbotClose.addEventListener('click', () => {
-      chatbotWindow.style.display = 'none';
-      chatbotButton.style.display = 'flex';
+    chatbotButton2.addEventListener('click', () => {
+      chatbotButton2.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton.style = 'background-color:rgb(101, 42, 136) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/1125UserGuideAIChat"
+      chatbotMessages.innerHTML = "";
     });
+
     
      // Send question to n8n webhook and display response
   chatbotSend.addEventListener('click', async () => {
@@ -30,7 +37,7 @@ const chatbotClose = document.getElementById('chatbot-close');
 
      // Call n8n webhook
     try {
-      const response = await fetch('https://productdocumentationia.bizagi.com/webhook/1125UserGuideAIChat', {
+      const response = await fetch(urlEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
