@@ -6,7 +6,7 @@ const chatbotClose = document.getElementById('chatbot-close');
     const chatbotQuestion = document.getElementById('chatbot-question');
     const chatbotSend = document.getElementById('chatbot-send');
     var urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/EnglishChatCount";
-
+    chatbotButton.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
   
     chatbotButton.addEventListener('click', () => {
       chatbotButton.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
