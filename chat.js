@@ -6,18 +6,18 @@ const chatbotClose = document.getElementById('chatbot-close');
     const chatbotQuestion = document.getElementById('chatbot-question');
     const chatbotSend = document.getElementById('chatbot-send');
     var urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/EnglishChatCount";
-    chatbotButton.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+    chatbotButton.style = 'background-color:rgb(0, 163, 70); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
   
     chatbotButton.addEventListener('click', () => {
-      chatbotButton.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
-      chatbotButton2.style = 'background-color:rgb(101, 42, 136) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton.style = 'background-color:rgb(0, 163, 70); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton2.style = 'background-color:rgb(161, 170, 165) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
       urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/EnglishChatCount"
       chatbotMessages.innerHTML = "";
     });
 
     chatbotButton2.addEventListener('click', () => {
-      chatbotButton2.style = 'background-color:rgb(158, 67, 223); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
-      chatbotButton.style = 'background-color:rgb(101, 42, 136) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton2.style = 'background-color:rgb(0, 163, 70); box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
+      chatbotButton.style = 'background-color:rgb(161, 170, 165) box-shadow: 0 0 10px rgba(0,0,0,0.3);  opacity: 1;';
       urlEndpoint = "https://productdocumentationia.bizagi.com/webhook/1125UserGuideAIChat"
       chatbotMessages.innerHTML = "";
     });
