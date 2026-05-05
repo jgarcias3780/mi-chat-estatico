@@ -24,10 +24,11 @@ const chatbotClose = document.getElementById('chatbot-close');
 
     
      // Send question to n8n webhook and display response
-  chatbotSend.addEventListener('click', async () => {
+    chatbotSend.addEventListener('click', async () => {
     const question = chatbotQuestion.value.trim();
     if (!question) return;
 
+  
       // Display user question
     const userMessage = document.createElement('div');
     userMessage.classList.add('chatbot-message', 'user-message');
